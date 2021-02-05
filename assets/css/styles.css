@@ -1,0 +1,340 @@
+@font-face {
+font-family: "GothamProReg";
+src: url("../fonts/GothaProReg.otf");
+}
+@font-face {
+    font-family: "GothamProBol";
+    src: url("../fonts/GothaProBol.otf");
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body, .content{
+    background-color: #63C1C3;
+    font-family: "GothamProReg";
+}
+
+.logo-content{
+    position: absolute;
+    top: 0px;
+    height: 60vh;
+    z-index: 1000;
+    box-sizing: border-box;
+    margin-left: 43vw;
+}
+.logo-content svg{
+    height: 60vh;
+}
+
+.content{
+    /* grid-template-columns: repeat(24,1fr);
+    grid-template-rows: 60vh 40vh; */
+    overflow: hidden;
+    box-sizing: border-box;
+    width: 100%;
+
+}
+.content #carousel1-mov{
+    display: none;
+}
+.content #carousel1{
+    z-index: 500;
+    position: absolute;
+    margin-top: 25vh;
+    margin-left: calc(43vw - 53vh);
+    width: 70vh;
+    height: 70vh;
+    position: relative;
+    float: left;
+
+}
+
+#carousel1 .carousel-item img{
+    height: 70vh;
+    width: 70vh;
+}
+.content #carousel2{
+    position: absolute;
+    margin-left: calc(43vw + 27vh);
+    margin-top: 18vh;
+    z-index: 500;
+    width: 40vh;
+    height: 40vh;
+}
+#carousel2 .carousel-item img{
+    height: 40vh;
+}
+
+.mensaje{
+    width: 400px;
+    height: 40vh;
+    margin-top: 60vh;
+    margin-left: calc(43vw + 17.5vh);;
+    background-color: #63C1C3;
+    z-index: 900;
+    position: absolute;
+    padding: 1.5rem;
+    line-height:1.3em;
+
+    color: white;
+    font-size: 1em;
+    /* line-height: 1em; */
+} 
+.mensaje h1{
+    font-family: "GothamProBol";
+    line-height:0.9em;
+    font-size: 1.9em;
+}
+.mensaje .img-leed img, .mensaje span.img-leed{
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+}
+.mensaje a{
+    text-decoration: none;
+    color: white;
+    margin-left: 1.5rem;
+    padding:8px 20px 8px 20px;
+    border: 2px solid white;
+    letter-spacing: 8px;
+    font-size: 0.6em;
+    font-family: "GothamProBol";
+
+}
+
+
+
+@media(min-width: 1920px ){
+
+    .mensaje{
+        width: 500px;
+        height: 40vh;
+        margin-top: 60vh;
+        margin-left: calc(43vw + 17.5vh);;
+        background-color: #63C1C3;
+        z-index: 900;
+        position: absolute;
+        padding: 2rem;
+        line-height:1.3em;
+    
+        color: white;
+        font-size: 1.7em;
+        /* line-height: 1em; */
+    }
+    .mensaje h1{
+        font-family: "GothamProBol";
+        line-height:0.9em;
+        font-size: 2em;
+    }
+    .mensaje .img-leed img, .mensaje span.img-leed{
+        display: inline-block;
+        width: 80px;
+        height: 80px;
+    }
+    .mensaje a{
+        text-decoration: none;
+        color: white;
+        margin-left: 1.5rem;
+        padding:10px 35px 10px 35px;
+        border: 2px solid white;
+        letter-spacing: 8px;
+        font-size: 0.4em;
+        font-family: "GothamProBol";
+    
+    }
+
+}
+
+/* @media(max-width: 1024px ) {
+    .logo-content{
+        position: absolute;
+        top: 0px;
+        background-image: url("../images/imagen.svg");
+        background-position: left;
+        background-repeat: no-repeat;
+        display: grid;
+        
+        height: 40vh;
+        width: 30vw;
+        z-index: 1000;
+        box-sizing: border-box;
+    
+    
+    }
+    .mensaje{
+        width: 80vw;
+        height: 20vh;
+        margin-top: 20vh;
+        margin-left: 20vw;
+        background-color: #63C1C3;
+        z-index: 900;
+        position: absolute;
+        padding: 1.5rem;
+        line-height:1.3em;
+    
+        color: white;
+        font-size: 1em;
+    
+    } 
+    .mensaje h1{
+        font-family: "GothamProBol";
+        line-height:0.9em;
+        font-size: 2em;
+    }
+    .mensaje .img-leed img, .mensaje span.img-leed{
+        display: inline-block;
+        width: 80px;
+        height: 80px;
+    }
+    .mensaje a{
+        text-decoration: none;
+        color: white;
+        margin-left: 1.5rem;
+        padding:10px 35px 10px 35px;
+        border: 2px solid white;
+        letter-spacing: 8px;
+        font-size: 0.4em;
+        font-family: "GothamProBol";
+    
+    }
+
+    .content #carousel2{
+        display: none;
+    }
+
+    #carousel1 .carousel-item img{
+        height: 50vh;
+    }
+    .content #carousel1{
+        background-color: white;
+        position: absolute;
+        margin-left: 10vw;
+        margin-right: 10vw;
+
+        margin-top: 45vh;
+        z-index: 500;
+        height: 45vh;
+        width: 80vw;
+    }
+} */
+
+
+@media(max-width : 1024px) and (orientation: portrait) {
+    .logo-content{
+        position: absolute;
+        margin-top: 0px;
+        display: grid;
+        height: 37vh;
+        margin-left: 0;
+        z-index: 1000;
+        box-sizing: border-box;
+    
+    
+    }
+    .logo-content svg{
+        height: 37vh;
+    }
+    .mensaje{
+        height: 183px;
+        margin-top: calc(37vh - 183px);
+        margin-left: calc(37vh / 2.7);
+        width: 80vw;
+        background-color: #63C1C3;
+        z-index: 900;
+        position: absolute;
+        padding: 1rem;
+        padding-bottom: 0rem;
+        line-height:1.3em;
+    
+        color: white;
+        font-size: 0.8em;
+        /* line-height: 1em; */
+    }
+    .mensaje h1{
+        font-family: "GothamProBol";
+        line-height:0.9em;
+        font-size: 1.9em;
+    }
+    .mensaje .img-leed img, .mensaje span.img-leed{
+        display: inline-block;
+        width: 60px;
+        height: 60px;
+    }
+    .mensaje a{
+        text-decoration: none;
+        color: white;
+        margin-left: 0.8rem;
+        padding:8px 10px 8px 15px;
+        border: 2px solid white;
+        letter-spacing: 8px;
+        font-size: 0.6em;
+        font-family: "GothamProBol";
+    
+    }
+    .content #carousel2{
+        display: none;
+    }
+    .content #carousel1{
+        display: none;
+    }
+    #carousel1-mov .carousel-item img{
+        height: 41vh;
+        
+    }
+    .content #carousel1-mov{
+        display: initial;
+        position: absolute;
+        margin-left: 10vw;
+        margin-right: 10vw;
+
+        margin-top: calc(37vh + 10vw);
+        z-index: 500;
+        height: 40vh;
+        width: 80vw;
+    }
+}
+
+
+@media(max-width : 868px) and (orientation: landscape) {
+    .mensaje{
+        width: 500px;
+        height: 30vh;
+        margin-top: 55vh;
+        margin-left: calc(43vw + 17.5vh);;
+        background-color: #63C1C3;
+        z-index: 900;
+        position: absolute;
+        padding: 2rem;
+        padding-bottom: 0;
+        line-height:1.3em;
+    
+        color: white;
+        font-size: 0.7em;
+        /* line-height: 1em; */
+    }
+    .mensaje h1{
+        font-family: "GothamProBol";
+        line-height:0.9em;
+        font-size: 1.5em;
+    }
+    .mensaje .img-leed img, .mensaje span.img-leed{
+        margin-top: -10px;
+        display: inline-block;
+        width: 30px;
+        height: 30px;
+    }
+    .mensaje a{
+        margin-top: -20px;
+        text-decoration: none;
+        color: white;
+        margin-left: 1.5rem;
+        padding:5px 25px 5px 25px;
+        border: 2px solid white;
+        letter-spacing: 8px;
+        font-size: 1em;
+        font-family: "GothamProBol";
+    
+    }
+}
